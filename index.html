@@ -1,0 +1,265 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body background="background.jfif">
+  
+
+    <h3 id="id1">Case Study Between Google Lens And Mobilenet</h3>
+    <br>
+    <br>
+    <br>
+    <span>
+    <img id="img1" src="Google Lens.png"> <h3 id="id2">Google Lens</h3>
+  </span>
+    <br>
+    <h3 id="id3">VS</h3>
+    <br>
+    <h3 id="id4">Mobilenet</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+ 
+      
+  <div id="myCarousel" class="carousel slide">
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <a href="#" target="_blank"></a>
+        <div class="test_image_and_result1 col-xs-12">
+          <li class="col-sm-4 col-xs-12">           
+            <b class="white1">Test Image - </b>
+            <img class="img img-responsive" src="Speaker.png">
+          </li>
+          <h5 class="first col-sm-4 col-xs-12">
+            Output on <b>Google Lens</b> - JBL Flip 3SE Speaker
+            <span> </span>
+          </h5>
+          <h5 class="second col-sm-4 col-xs-12">
+            Output on <b>Mobilenet Model </b> - microphone, mike
+            <span> </span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4>Result - </h4>
+            <hr>
+            <h4> Google Lens Is More Accurate</h4>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="#" target="_blank"></a>
+      <div class="test_image_and_result2 col-xs-12">
+        <li class="col-sm-4 col-xs-12">
+          <b class="white2">Test Image - </b>
+          <img class="img" src="Headphones.jpg">
+        </li>
+        <h5 class="first col-sm-4 col-xs-12">
+          Output on <b>Google Lens</b> - Sony WH CH-510 Headphones (Blue)
+          <span> </span>
+        </h5>
+        <h5 class="second col-sm-4 col-xs-12">
+          Output on <b>Mobilenet Model </b> - Waccum Cleaner
+          <span> </span>
+        </h5>
+        <div class="mini_result" class="col-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens Is More Accurate </h4>
+        </div>
+      </div>
+  </div>
+
+  <div class="item">
+    <a href="#" target="_blank"></a>
+    <div class="test_image_and_result3 col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b class="white3">Test Image - </b> 
+        <img class="img" src="Mouse.jpg">
+      </li>
+      <h5 class="first col-sm-4 col-xs-12">
+        Output on <b>Google Lens</b> - Zebronics Zeb War Gaming Mouse
+        <span> </span>
+      </h5>
+      <h5 class="second col-sm-4 col-xs-12">
+        Output on <b>Mobilenet Model </b> - Joystick
+        <span> </span>
+      </h5>
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - </h4>
+        <hr>
+        <h4> Google Lens Is More Accurate </h4>
+      </div>
+    </div>
+</div>
+
+<div class="item">
+  <a href="#" target="_blank"></a>
+  <div class="test_image_and_result4 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b class="white4">Test Image - </b>
+      <img class="img" src="Textbook.jpg">
+    </li>
+    <h5 class="first col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b> - Class 7 Mathematics Textbook
+      <span> </span>
+    </h5>
+    <h5 class="second col-sm-4 col-xs-12">
+      Output on <b>Mobilenet Model </b> - backpack, back pack, knapsack, packsack, rucksack, haversack
+      <span> </span>
+    </h5>
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4> Google Lens Is More Accurate </h4>
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <a href="#" target="_blank"></a>
+  <div class="test_image_and_result5 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b class="white5">Test Image - </b>
+      <img class="img" src="Sand Clock.jpg">
+    </li>
+    <h5 class="first col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b> - Sand Clock
+      <span> </span>
+    </h5>
+    <h5 class="second col-sm-4 col-xs-12">
+      Output on <b>Mobilenet Model </b> - Guillotine
+      <span> </span>
+    </h5>
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4> Google Lens Is More Accurate </h4>
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <a href="#" target="_blank"></a>
+  <div class="test_image_and_result6 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b class="white6">Test Image - </b>
+      <img class="img" src="Cream.jpg">
+    </li>
+    <h5 class="first col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b> - Elevora Moisturising Cream
+      <span> </span>
+    </h5>
+    <h5 class="second col-sm-4 col-xs-12">
+      Output on <b>Mobilenet Model </b> - beaker
+      <span> </span>
+    </h5>
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4> Google Lens Is More Accurate </h4>
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <a href="#" target="_blank"></a>
+  <div class="test_image_and_result7 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b class="white7">Test Image - </b>
+      <img class="img" src="Dobble.jfif">
+    </li>
+    <h5 class="first col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b> - Dobble
+      <span> </span>
+    </h5>
+    <h5 class="second col-sm-4 col-xs-12">
+      Output on <b>Mobilenet Model </b> - punching bag, punch bag, punching ball, punchball
+      <span> </span>
+    </h5>
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4> Google Lens Is More Accurate </h4>
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <a href="#" target="_blank"></a>
+  <div class="test_image_and_result8 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b class="white8">Test Image - </b>
+      <img class="img" src="Bottle.jpg">
+    </li>
+    <h5 class="first col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b> - Probott 750ML Water Bottle (Cyan)
+      <span> </span>
+    </h5>
+    <h5 class="second col-sm-4 col-xs-12">
+      Output on <b>Mobilenet Model </b> - Water Bottle
+      <span> </span>
+    </h5>
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4> Both are Same </h4>
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <a href="#" target="_blank"></a>
+  <div class="test_image_and_result9 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b class="white9">Test Image - </b>
+      <img class="img" src="Fevicol.jpg">
+    </li>
+    <h5 class="first col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b> - Fevicol Gum
+      <span> </span>
+    </h5>
+    <h5 class="second col-sm-4 col-xs-12">
+      Output on <b>Mobilenet Model </b> - microphone,mike
+      <span> </span>
+    </h5>
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4> Google Lens Is More Accurate </h4>
+    </div>
+  </div>
+</div>
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+    </div>
+
+    <h4>Therfore according to the conclusion Google Lens is More Accurate then Mobilenet</h4>
+  </div>
+
+    <p class="bottom">Developed by - Manan Poddar</p>
+</body>
+</html>
